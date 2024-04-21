@@ -55,3 +55,10 @@ print('slicingStr[::2] =', slicingStr[::2])  # slicingStr[::2] = 02468
 slicingEx1 = 'asd.png'
 print('slicingEx1[:-4] =', slicingEx1[:-4])  # slicingEx1[:-4] = asd
 print('slicingEx1[-3:] =', slicingEx1[-3:])  # slicingEx1[-3:] = png
+
+sentence = '   Hello, World!   '
+result = sentence\
+    .strip()\
+    .lower()\
+    .replace('world', 'python')
+print(result)  # hello, python!
